@@ -1,0 +1,107 @@
+
+.home-bttn{
+    width: 90px;
+    padding: 10px;
+    color: grey;
+    border: none;
+    background-color: white;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    transition-delay: 1ms;
+
+}
+.contact-bttn{
+    width: 70px;
+    padding: 10px;
+    color: grey;
+    border: none;
+    background-color: white;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+   
+.Holiday-bttn{
+    padding: 10px;
+    color: grey;
+    border: none;
+    background-color: white;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+
+}
+.cat-bttn{
+    height: 100%;
+    padding: 10px;
+    color: grey;
+    border: none;
+    background-color: white;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+
+}
+.search-bttn{
+    width: 55px;
+    margin-left: -1;
+    border-width: 0.5px;
+    border-color: gray;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 4px;
+    height: 34.05px;
+    background-color: white;
+    transition: all 0.3ms;
+}
+.signin-bttn{
+    width: 125px;
+    padding: 10px;
+    color: grey;
+    border: none;
+    background-color: white;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+
+
+}
+.join-bttn{
+    width: 80px;
+    padding: 10px;
+    color: grey;
+    border: none;
+    background-color: white;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.ppr-bttn{
+    border: none;
+    color: grey;
+    background-color: white;
+    height: 50px;
+    transition: all 0.3s;
+}
+.rect-bttn{
+    border: none;
+    color: grey;
+    background-color: white;
+    height: 50px;
+    transition: all 0.3s;
+}
+.auth-bttn{
+    border: none;
+    color: grey;
+    background-color: white;
+    height: 50px;
+    transition: all 0.3s;
+}
+.new-bttn{
+    border: none;
+    color: grey;
+    background-color: white;
+    height: 50px;
+    transition: all 0.3s;
+}

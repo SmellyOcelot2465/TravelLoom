@@ -1,0 +1,94 @@
+.in-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    box-shadow: 1px 1px 5px grey;
+    
+}
+.header{
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 5px grey;
+    justify-content: flex-start;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: solid;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-color: rgb(161, 157, 157);
+    background-color: white;
+}
+.logo{
+    height: 100%;
+     flex:2;
+}
+.symbol{
+    width: 100%;
+    flex: 1;
+}
+.website-logo{
+    flex-shrink: 0;
+    margin-right: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.search::placeholder{
+
+}
+input{
+    outline: none;
+}
+.search-bar{
+    
+    border-width: 1px;
+    border-color: gray;
+    flex: 1;
+    border-top-left-radius:  30px;
+    border-bottom-left-radius: 30px;
+    border: none;
+    width: 0px;
+    padding: 5px;
+    padding-left: 15px;
+    height: 25px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: inset 0.5px 0.05px 3px gray;
+}
+.left-section{
+    flex: 4;
+    vertical-align: center;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    
+}
+
+.middle-section{
+    flex: 2;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 500px;
+    align-items: center;
+}
+.right-section{
+    flex: 1;
+    flex-shrink: 0;
+    display: flex;
+    align-items: stretch;
+    width: 200px;
+}
