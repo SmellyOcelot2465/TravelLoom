@@ -61,6 +61,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,6 +88,7 @@
     <link rel="Stylesheet" href="Styles/Icons.css">
     <link rel="Stylesheet" href="Styles/slideshow.css">
     <link rel="Stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/Navbar/Header.css">
     <title>HomePage</title>
 
 </head>
@@ -90,39 +100,40 @@ background-size: 100% 100%;">
 
     <body class="bdy" style="padding-bottom: 100px; padding-top: 80px; margin: 0px;">
 
-        <div class="header">
-            <div class="left-section">
-                <div class="website-logo">
-                    <img class="symbol" src="Images/owl.jpg">
-                    <a class="img" href=""><img class="logo" src="Images/logo.png"></a>
-                </div>
-                <button class="home-bttn"><img class="Image" src="Images/home.png"><a href="http://127.0.0.1:5500/Newbiethon/MainPage.html" style="text-decoration: none;">Home</a></button>
-                <button class="Holiday-bttn"><img class="Image" src="Images/bg.png  ">Holidays</button>
-                <div class="dropdown">
-                    <button class="cat-bttn"><img style="width: 35px;" src="Images/balloon.png">Activities</button>
-                    <div class="content">
-                        <div class="in-content">
-                            <button class="ppr-bttn">Surfing</button>
-                            <button class="ppr-bttn">Scuba Diving</button>
-                            <button class="rect-bttn">Cruise</button>
-                            <button class="new-bttn">Hot Air Ballon</button>
-                            <button class="auth-bttn">Fly Boarding</button>
-                            <button class="auth-bttn">Helicopter Ride</button>
-                        </div>
+        <div class="Header">
 
-                    </div>
+            <div class="logo">
+                <div class="Menu-bttn" style="margin-right: 30px;">
+                    <div><img class="Iconmen" id="Menu" src="Images/Icons/menusimpl.png"></div>
                 </div>
-                <button class="contact-bttn" onclick="show_footer();"><img style="width: 20px;" src="Images/contact2.png">Contact Us</button>
+                <img class="logo1" src="Images/Icons/logo1.png">
             </div>
-            <div class="middle-section">
-                <input type="text" class="search-bar" placeholder="Find Your Next Destination or Activity">
-                <button class="search-bttn">
-                    <img src="Icons/search.svg" style="height: 100%; margin-right: 3.5px;">
+            <div class="button_section">
+                <button class="air-bttn">
+                    <div class="icnbox"><img class="Icon" id="Airplane" src="Images/Icons/airplane.png"></div><span
+                        class="bttn-names">Flights</span>
                 </button>
+                <button class="train-bttn">
+                    <div class="icnbox"><img id="Train" class="Icon" src="Images/Icons/train1.png"></div><span
+                        class="bttn-names">Trains</span>
+                </button>
+                <button class="Buss-bttn">
+                    <div class="icnbox"><img id="Bus" class="Icon" src="Images/Icons/bus.png"></div><span
+                        class="bttn-names">Bus</span>
+                </button>
+                <button class="Hotel-bttn">
+                    <div class="icnbox"><img id="Hotel" class="Icon" src="Images/Icons/hotel.png"></div><span
+                        class="bttn-names">Hotels</span>
+                </button>
+                <button class="Holiday-bttn">
+                    <div class="icnbox"><img id="Holiday" class="Icon" src="Images/Icons/holiday.png"></div><span
+                        class="bttn-names">Holiday Packages</span>
+                </button>
+    
             </div>
-            <div class="right-section">
-                <button class="signin-bttn">Sign In</button>
-                <button class="join-bttn">Join</button>
+            <div class="right-sect">
+                <div class="RSB" style="background-color: white; padding-left: 25%;">INR | ENG</div>
+                <div class="RSB" style="background-color: #2196F3; color: white;">Login or SignUp</div>
             </div>
         </div>
         <div class="main-body">
@@ -373,6 +384,22 @@ background-size: 100% 100%;">
         <img style="width: 100%; height: 300px; position: absoloute; top: 0; z-index: 1;" src="Images/footer_travel.png">
    
         <script>
+            var prevScrollPosition = window.pageYOffset;
+       
+       window.onscroll = function () {
+           var currentScrollPosition = window.pageYOffset;
+          
+           if (prevScrollPosition>=currentScrollPosition) 
+           {
+               document.querySelector(".Header").style.top ="0px";
+           } 
+           else {
+               document.querySelector(".Header").style.top ="-120px";
+           }
+          
+       }
+
+
             var slideIndex = 1;
             showDivs(slideIndex);
 
