@@ -3,13 +3,13 @@
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    height: 110px;
-    background-color: lightblue;
+    height: 120px;
+    background-color: rgb(157, 203, 219);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    transition: top 0.2s;
+    transition: top 0.3s;
 }
 
 .Header button {
@@ -93,6 +93,7 @@
 /* Icons of button section ----------------------------------------------------*/
 
 #menu {
+    
 
     margin-left: 50%;
 }

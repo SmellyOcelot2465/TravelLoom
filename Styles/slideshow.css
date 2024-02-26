@@ -11,7 +11,7 @@
 }
 
 .slideshow{
-   
+    z-index: 1;
     box-shadow: 1px 1px 5px black;
     margin-top: 50px;
     width: 900px;
@@ -19,7 +19,7 @@
 }
 
 .mySlides {
- 
+    z-index: 1;
 box-shadow: 1px 1px 5px black;
 width: 900px;
 display:none;

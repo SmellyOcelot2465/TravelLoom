@@ -64,11 +64,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- kanit -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
+
+    <!-- oswald -->
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,6 +84,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    
+    <!-- inter -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- stylesheets -->
     <link rel="Stylesheet" href="Styles/body.css">
@@ -89,11 +100,12 @@
     <link rel="Stylesheet" href="Styles/slideshow.css">
     <link rel="Stylesheet" href="Styles/footer.css">
     <link rel="stylesheet" href="Styles/Navbar/Header.css">
+    <link rel="stylesheet" href="Styles/Sidebar.css">
     <title>HomePage</title>
 
 </head>
 
-<body style="background-image: url('Images/backdrnd.jpeg');
+<body style="background-image: url('Images/Background/back5.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed; 
 background-size: 100% 100%;">
@@ -103,33 +115,50 @@ background-size: 100% 100%;">
         <div class="Header">
 
             <div class="logo">
-                <div class="Menu-bttn" style="margin-right: 30px;">
-                    <div><img class="Iconmen" id="Menu" src="Images/Icons/menusimpl.png"></div>
+                <div onclick="Open_Drawer();" class="Menu-bttn" style="margin-right: 30px;">
+                    <div><img class="Iconmen" id="Menu" src="Images/Icons/Header/menusimpl.png"></div>
                 </div>
+                <div class="Sidebar_Content">
+                    <button class="close_bttn" onclick="Close_Drawer(); ">Close <img class="close_img"
+                            src="Icons/close.png"></button>
+                    <button style="color: white;">Home</button>
+                    <button style="color: white;">Support</button>
+                    <button style="color: white;">About Us</button>
+                    <button style="color: white;">Contact Us</button>
+                    <button style="color: white;">Our Work</button>
+                    <button style="color: white;">Campaigns</button>
+
+
+                </div>
+                <!-- blur overlay -->
+                <div class="blur_overlay"></div>
+
+
+
                 <img class="logo1" src="Images/Icons/logo1.png">
             </div>
             <div class="button_section">
                 <button class="air-bttn">
-                    <div class="icnbox"><img class="Icon" id="Airplane" src="Images/Icons/airplane.png"></div><span
+                    <div class="icnbox"><img class="Icon" id="Airplane" src="Images/Icons/Header/airplane.png"></div><span
                         class="bttn-names">Flights</span>
                 </button>
                 <button class="train-bttn">
-                    <div class="icnbox"><img id="Train" class="Icon" src="Images/Icons/train1.png"></div><span
+                    <div class="icnbox"><img id="Train" class="Icon" src="Images/Icons/Header/train1.png"></div><span
                         class="bttn-names">Trains</span>
                 </button>
                 <button class="Buss-bttn">
-                    <div class="icnbox"><img id="Bus" class="Icon" src="Images/Icons/bus.png"></div><span
+                    <div class="icnbox"><img id="Bus" class="Icon" src="Images/Icons/Header/bus.png"></div><span
                         class="bttn-names">Bus</span>
                 </button>
                 <button class="Hotel-bttn">
-                    <div class="icnbox"><img id="Hotel" class="Icon" src="Images/Icons/hotel.png"></div><span
+                    <div class="icnbox"><img id="Hotel" class="Icon" src="Images/Icons/Header/hotel.png"></div><span
                         class="bttn-names">Hotels</span>
                 </button>
                 <button class="Holiday-bttn">
-                    <div class="icnbox"><img id="Holiday" class="Icon" src="Images/Icons/holiday.png"></div><span
+                    <div class="icnbox"><img id="Holiday" class="Icon" src="Images/Icons/Header/holiday.png"></div><span
                         class="bttn-names">Holiday Packages</span>
                 </button>
-    
+
             </div>
             <div class="right-sect">
                 <div class="RSB" style="background-color: white; padding-left: 25%;">INR | ENG</div>
@@ -137,7 +166,9 @@ background-size: 100% 100%;">
             </div>
         </div>
         <div class="main-body">
-            <h1 style=" color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 50px; margin-top: 150px;">Popular Destinations</h1>
+            <h1
+                style=" color: white; font-family: inter; font-size: 50px; margin-top: 150px;">
+                Popular Destinations</h1>
 
             <div class="slideshow">
 
@@ -154,7 +185,7 @@ background-size: 100% 100%;">
                         Singapore
                     </div>
                 </div>
-                
+
                 <div class="mySlides">
                     <img src="Images/kerala2.jpg" style="width:100%">
                     <div class="name">
@@ -188,216 +219,229 @@ background-size: 100% 100%;">
                     </div>
                 </div>
 
-                <button class="left-bttn" onclick="plusDivs(-1)"><img style=" width: 100%; margin-left: 4px; margin-top: 3px;" src="Icons/left.png"></button>
-                <button class="right-bttn" onclick="plusDivs(1)"><img style="width: 100%; margin-left: 4px; margin-top: 3px;" src="Icons/right.png"></button>
+                <button class="left-bttn" onclick="plusDivs(-1)"><img
+                        style=" width: 100%; margin-left: 4px; margin-top: 3px;" src="Icons/left.png"></button>
+                <button class="right-bttn" onclick="plusDivs(1)"><img
+                        style="width: 100%; margin-left: 4px; margin-top: 3px;" src="Icons/right.png"></button>
 
             </div>
 
             <div class="main-grid">
-                <h1 style=" color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 50px; margin-top: 150px; margin-bottom: 50px;">Handpicked For You</h1>
+                <h1
+                    style=" color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 50px; margin-top: 150px; margin-bottom: 50px;">
+                    Handpicked For You</h1>
             </div>
         </div>
 
         <div class="grid">
             <div class="destination-column">
-                <a  style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Kashmir.html">
-                <div class="dest">
-                    <div style=""><img class="dest-img" src="Images/kashmir.jpg"></div>
-                    <div style="display: flex;height: 70px;">
-                        <div class="nop-1">Kashmir</div>
-                        <br>
-                        <div class="info-1">
-                            <p>Starting From<br>Price:400$</p>
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Kashmir.html">
+                    <div class="dest">
+                        <div style=""><img class="dest-img" src="Images/kashmir.jpg"></div>
+                        <div style="display: flex;height: 70px;">
+                            <div class="nop-1">Kashmir</div>
+                            <br>
+                            <div class="info-1">
+                                <p>Starting From<br>Price:400$</p>
+                            </div>
                         </div>
+
+
                     </div>
-
-
-                </div>
                 </a>
-                <a  style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/ooty.html">
-                <div class="dest">
-                    <div style=""><img class="dest-img" src="Images/ooty.webp"></div>
-                    <div style="display: flex; height: 70px;">
-                        <div class="nop-1">Ooty</div>
-                        <br>
-                        <div class="info-1">
-                            <p>Starting From<br>Price:400$</p>
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/ooty.html">
+                    <div class="dest">
+                        <div style=""><img class="dest-img" src="Images/ooty.webp"></div>
+                        <div style="display: flex; height: 70px;">
+                            <div class="nop-1">Ooty</div>
+                            <br>
+                            <div class="info-1">
+                                <p>Starting From<br>Price:400$</p>
+                            </div>
                         </div>
+
+
                     </div>
-
-
-                </div>
-            </a>
-            <a  style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Kerala.html">
-                <div class="dest">
-                    <div style=""><img class="dest-img" src="Images/kerala.jpg"></div>
-                    <div style="display: flex;height: 70px;">
-                        <div class="nop-1">Kerala</div>
-                        <br>
-                        <div class="info-1">
-                            <p>Starting From<br>Price:400$</p>
+                </a>
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Kerala.html">
+                    <div class="dest">
+                        <div style=""><img class="dest-img" src="Images/kerala.jpg"></div>
+                        <div style="display: flex;height: 70px;">
+                            <div class="nop-1">Kerala</div>
+                            <br>
+                            <div class="info-1">
+                                <p>Starting From<br>Price:400$</p>
+                            </div>
                         </div>
+
+
                     </div>
-
-
-                </div>
             </div>
-        </a>
-        
-            <h1 style="color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 50px; margin-bottom: 50px; margin-left: 300px;">Exciting International Destinations</h1>
-            <div class="destination-column">
-                <a  style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Australia.html">
-                <div class="dest">
-                    <div style=""><img class="dest-img" src="Images/Aus1.jpg"></div>
-                    <div style="display: flex;height: 70px;">
-                        <div class="nop-1">Australia</div>
-                        <br>
-                        <div class="info-1">
-                            <p>Starting From<br>Price:400$</p>
-                        </div>
-                    </div>
-
-
-                </div>
             </a>
-                <a  style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Booking.html">
-                <div class="dest">
-                    <div style=""><img class="dest-img" src="Images/Sing1.jpg"></div>
-                    <div style="display: flex;height: 70px;">
-                        <div class="nop-1">Singapore</div>
-                        <br>
-                        <div class="info-1">
-                            <p>Starting From<br>Price:400$</p>
-                        </div>
-                    </div>
 
-                </div>
+            <h1
+                style="color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 50px; margin-bottom: 50px; margin-left: 300px;">
+                Exciting International Destinations</h1>
+            <div class="destination-column">
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Australia.html">
+                    <div class="dest">
+                        <div style=""><img class="dest-img" src="Images/Aus1.jpg"></div>
+                        <div style="display: flex;height: 70px;">
+                            <div class="nop-1">Australia</div>
+                            <br>
+                            <div class="info-1">
+                                <p>Starting From<br>Price:400$</p>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </a>
-                <a  style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Booking.html">
-                <div class="dest">
-                    <div style=""><img class="dest-img" src="Images/Japan1.jpg"></div>
-                    <div style="display: flex;height: 70px;">
-                        <div class="nop-1">Japan</div>
-                        <br>
-                        <div class="info-1">
-                            <p>Starting From<br>Price:400$</p>
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Booking.html">
+                    <div class="dest">
+                        <div style=""><img class="dest-img" src="Images/Sing1.jpg"></div>
+                        <div style="display: flex;height: 70px;">
+                            <div class="nop-1">Singapore</div>
+                            <br>
+                            <div class="info-1">
+                                <p>Starting From<br>Price:400$</p>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                </a>
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Booking.html">
+                    <div class="dest">
+                        <div style=""><img class="dest-img" src="Images/Japan1.jpg"></div>
+                        <div style="display: flex;height: 70px;">
+                            <div class="nop-1">Japan</div>
+                            <br>
+                            <div class="info-1">
+                                <p>Starting From<br>Price:400$</p>
+                            </div>
+                        </div>
+
+                    </div>
             </div>
-        </a>
+            </a>
 
             <div class="destination-column">
-                <a  style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Booking.html">
-                <div class="dest">
-                    <div style=""><img class="dest-img" src="Images/Ass1.jpg"></div>
-                    <div style="display: flex;height: 70px;">
-                        <div class="nop-1">Assam</div>
-                        <br>
-                        <div class="info-1">
-                            <p>Starting From<br>Price:400$</p>
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Booking.html">
+                    <div class="dest">
+                        <div style=""><img class="dest-img" src="Images/Ass1.jpg"></div>
+                        <div style="display: flex;height: 70px;">
+                            <div class="nop-1">Assam</div>
+                            <br>
+                            <div class="info-1">
+                                <p>Starting From<br>Price:400$</p>
+                            </div>
                         </div>
+
+
                     </div>
-
-
-                </div>
                 </a>
-                <a  style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Booking.html">
-                <div class="dest">
-                    <div style=""><img class="dest-img" src="Images/Andaman.avif"></div>
-                    <div style="display: flex;height: 70px;">
-                        <div class="nop-1">Andaman</div>
-                        <br>
-                        <div class="info-1">
-                            <p>Starting From<br>Price:400$</p>
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Booking.html">
+                    <div class="dest">
+                        <div style=""><img class="dest-img" src="Images/Andaman.avif"></div>
+                        <div style="display: flex;height: 70px;">
+                            <div class="nop-1">Andaman</div>
+                            <br>
+                            <div class="info-1">
+                                <p>Starting From<br>Price:400$</p>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
                 </a>
-                <a  style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Malaysia.html">
-                <div class="dest">
-                    <div style=""><img class="dest-img" src="Images/Mala1.avif"></div>
-                    <div style="display: flex;height: 70px;">
-                        <div class="nop-1">Malaysia</div>
-                        <br>
-                        <div class="info-1">
-                            <p>Starting From<br>Price:400$</p>
+                <a style="text-decoration: none;" href="http://127.0.0.1:5500/Newbiethon/Malaysia.html">
+                    <div class="dest">
+                        <div style=""><img class="dest-img" src="Images/Mala1.avif"></div>
+                        <div style="display: flex;height: 70px;">
+                            <div class="nop-1">Malaysia</div>
+                            <br>
+                            <div class="info-1">
+                                <p>Starting From<br>Price:400$</p>
+                            </div>
                         </div>
+
+
+
                     </div>
-                    
-
-
-                </div>
-            </a>
+                </a>
             </div>
         </div>
         <div class="footer">
-            <img style="width: 100%; height: 300px; position: absoloute; top: 0; opacity: 0;z-index: 1;" src="Images/foot-back.jpg">
+            <img style="width: 100%; height: 300px; position: absoloute; top: 0; opacity: 0;z-index: 1;"
+                src="Images/foot-back.jpg">
             <div class="footer-1">
-            <div class="f1-0">
-                <div class="about">About </div>
-                <div style="color: black;">
-                    <li class="about-us" href="">About Us</li>
-                    <li class="about-us" href="">Carrers</li>
-                    <li class="about-us" href="">Press</li>
-                    <li class="about-us" href="">Policies</li>
-                    <li class="about-us" href="">Terms & Conditions</li>
+                <div class="f1-0">
+                    <div class="about">About </div>
+                    <div style="color: black;">
+                        <li class="about-us" href="">About Us</li>
+                        <li class="about-us" href="">Carrers</li>
+                        <li class="about-us" href="">Press</li>
+                        <li class="about-us" href="">Policies</li>
+                        <li class="about-us" href="">Terms & Conditions</li>
+                    </div>
+                    <div></div>
                 </div>
-                <div></div>
-            </div>
-            <div class="f2-0">
-                <div class="enquiry">Have Questions For Us</div>
-                <div class="bars"><input class="name-bar" type="text" placeholder="Your Name" style="background-color: transparent;box-shadow: 1px 1px 5px;border: 0;">
-                    <br>
-                <input class="email-bar" type="text" placeholder="Your Email Id" style="background-color: transparent;box-shadow: 1px 1px 5px;border: 0;">
-                <br>
-                <div><input class="question-bar" type="text" placeholder="Your Questions" style="background-color: transparent;box-shadow: 1px 1px 5px;border: 0;"></div>
-                <button class="submit-button">Submit</button>
+                <div class="f2-0">
+                    <div class="enquiry">Have Questions For Us</div>
+                    <div class="bars"><input class="name-bar" type="text" placeholder="Your Name"
+                            style="background-color: transparent;box-shadow: 1px 1px 5px;border: 0;">
+                        <br>
+                        <input class="email-bar" type="text" placeholder="Your Email Id"
+                            style="background-color: transparent;box-shadow: 1px 1px 5px;border: 0;">
+                        <br>
+                        <div><input class="question-bar" type="text" placeholder="Your Questions"
+                                style="background-color: transparent;box-shadow: 1px 1px 5px;border: 0;"></div>
+                        <button class="submit-button">Submit</button>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <div class="f3-1">Contact Us</div>
+                    <div class="f3-2">
+                        Address : Reliance Industries Limited Maker Chambers - IV, Nariman Point Mumbai 400 021, India
+                        <br>
+                        <br>
+                        Email Id : info@ril.com
+                        <br>
+                        <br>
+                        Phone : tel:+912235555000
+                        <br>
+                        <br>
+                        Phone : tel:+912235555000
+                    </div>
                 </div>
             </div>
-            <div class="contact-us">
-                <div class="f3-1">Contact Us</div>
-                <div class="f3-2">
-                    Address : Reliance Industries Limited Maker Chambers - IV, Nariman Point Mumbai 400 021, India
-                    <br>
-                    <br>
-                    Email Id : info@ril.com 
-                    <br>
-                    <br>
-                    Phone : tel:+912235555000
-                    <br>
-                    <br>
-                    Phone : tel:+912235555000
-                </div>
-            </div>
-        </div>
 
             <br>
             <div class="footer-2">
-        <div class="insta">Follow Us on : <a class="link-1" href="https://www.instagram.com/" >Instagram<img class="insta-icon" src="Images/Instagram_icon.png.webp"></a></div>
-        <div class="twitter"><a class="link-2" href="https://www.Twitter.com/">Twitter<img class="twitter-icon" src="Images/twitter.png"></a></div>
-        <div class="fb"><a class="link-3" href="https://www.facebook.com/">Facebook<img class="fb-icon" src="Images/facebook-icon.png"></a></div>
-    </div>
+                <div class="insta">Follow Us on : <a class="link-1" href="https://www.instagram.com/">Instagram<img
+                            class="insta-icon" src="Images/Icons/Footer/Instagram_icon.png.webp"></a></div>
+                <div class="twitter"><a class="link-2" href="https://www.Twitter.com/">Twitter<img class="twitter-icon"
+                            src="Images/Icons/Footer/twitter.png"></a></div>
+                <div class="fb"><a class="link-3" href="https://www.facebook.com/">Facebook<img class="fb-icon"
+                            src="Images/Icons/Footer/facebook-icon.png"></a></div>
+            </div>
         </div>
-        <img style="width: 100%; height: 300px; position: absoloute; top: 0; z-index: 1;" src="Images/footer_travel.png">
-   
+        <img style="width: 100%; height: 300px; position: absoloute; top: 0; z-index: 1;"
+            src="Images/Icons/Footer/footer_travel.png">
+
         <script>
             var prevScrollPosition = window.pageYOffset;
-       
-       window.onscroll = function () {
-           var currentScrollPosition = window.pageYOffset;
-          
-           if (prevScrollPosition>=currentScrollPosition) 
-           {
-               document.querySelector(".Header").style.top ="0px";
-           } 
-           else {
-               document.querySelector(".Header").style.top ="-120px";
-           }
-          
-       }
+
+            window.onscroll = function () {
+                var currentScrollPosition = window.pageYOffset;
+
+                if (prevScrollPosition >= currentScrollPosition) {
+                    document.querySelector(".Header").style.top = "0px";
+                }
+                else {
+                    document.querySelector(".Header").style.top = "-130px";
+                }
+
+            }
 
 
             var slideIndex = 1;
@@ -419,8 +463,19 @@ background-size: 100% 100%;">
             }
             function show_footer() {
 
-                document.querySelector(".footer").scrollIntoView({behaviour:"smooth"});
-                       }
+                document.querySelector(".footer").scrollIntoView({ behaviour: "smooth" });
+            }
+
+            // sidebar
+
+            function Open_Drawer() {
+                document.querySelector(".Sidebar_Content").style.width="200px";
+                document.querySelector(".blur_overlay").style.display = "block";
+            }
+            function Close_Drawer() {
+                document.querySelector(".Sidebar_Content").style.width="0px"
+                document.querySelector(".blur_overlay").style.display = "None";
+            }
         </script>
 
 

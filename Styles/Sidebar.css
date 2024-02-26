@@ -1,0 +1,69 @@
+.blur_overlay {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+
+}
+
+.Sidebar_Content {
+    position: fixed;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* flex end */
+    box-shadow: 1px 2px 5px lightslategray;
+    background-color: lightsalmon;
+    border-top-right-radius: 10px;
+    padding-top: 5px;
+    /* transition */
+    transition: 0.5s;
+    overflow-x: hidden;
+    width: 0px;
+    /* transition end */
+
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.close_bttn {
+    position: relative;
+    color: black;
+}
+
+.close_img {
+    height: 20px;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+
+}
+
+.Sidebar_Content button {
+    transition: 0.5s;
+    margin-top: 10px;
+    font-family: kanit;
+    max-height: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+
+
+}
+
+.Sidebar_Content button:hover {
+
+    background-color: grey;
+
+}
