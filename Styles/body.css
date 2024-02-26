@@ -44,9 +44,11 @@ padding: 0px;
 }
  .dest:hover{
     opacity: 75%;
+    transform: scale(1.2);
 
 }
  .dest-img{
+   
     box-shadow: 1px 1px 5px black;
     height: 280px;
     width: 100%;
@@ -68,4 +70,14 @@ padding-right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.dest{
+    transition: transform 0.3s ease-in-out;
+}
+.text1{
+    font-family: inter;
+
+        background-image: linear-gradient(to top, #5b5b5b, #8b8b8b);
+        background-clip: text;
+        color: transparent;
 }

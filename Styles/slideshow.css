@@ -1,4 +1,4 @@
-.name{
+.name {
     opacity: 50%;
     font-family: Arial, Helvetica, sans-serif;
     width: 250px;
@@ -10,7 +10,7 @@
     left: 0;
 }
 
-.slideshow{
+.slideshow {
     z-index: 1;
     box-shadow: 1px 1px 5px black;
     margin-top: 50px;
@@ -20,30 +20,35 @@
 
 .mySlides {
     z-index: 1;
-box-shadow: 1px 1px 5px black;
-width: 900px;
-display:none;
+    box-shadow: 1px 1px 5px black;
+    width: 900px;
+    display: none;
 }
-.left-bttn{
-    
+
+
+.left-bttn {
+    z-index: 1;
+
     left: 0;
     height: 100px;
     width: 40px;
-border-radius: 50%;
-cursor: pointer;
-height: 40px;
-background-color: white;
-position:absolute;
-top: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
 }
-.right-bttn{
+
+.right-bttn {
+    z-index: 1;
     right: 0;
     height: 100px;
     width: 40px;
-border-radius: 50%;
-cursor: pointer;
-height: 40px;
-background-color: white;
-position:absolute;
-top: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
 }
