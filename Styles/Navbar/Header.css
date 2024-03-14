@@ -1,10 +1,10 @@
 .Header {
-    box-shadow: 1px 1px 5px;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     padding: 5px;
     height: 120px;
-    background-color: rgb(157, 203, 219);
+    background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,6 +13,7 @@
 }
 
 .Header button {
+    
     height: 100px;
     margin-right: 2px;
     border-radius: 10px;
@@ -22,8 +23,7 @@
 
 .Header button:hover {
     cursor: pointer;
-    box-shadow: 1px 1px 5px grey;
-    background-color: lightgrey;
+ 
 }
 
 .air-bttn,
@@ -86,7 +86,7 @@
     font-family: kanit;
     font-weight: 400;
     font-size: 15px;
-    color: gray;
+    color: whitesmoke;
     padding: 10px
 }
 
@@ -94,9 +94,7 @@
 /* Icons of button section ----------------------------------------------------*/
 
 #menu {
-    
-
-    margin-left: 50%;
+     margin-left: 50%;
 }
 
 #Airplane,

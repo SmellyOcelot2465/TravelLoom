@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .main_frame{
+            display: flex;
+            flex-direction: row;
+            width: 1400px;
+            height: 600px;
+            
+
+        }
+        .images{
+            width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: none;
+        }
+        .Imge{
+            width: 500px;
+            height: 500px;
+            object-fit: fill;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main_frame">
+        <div class="images"><img class="Imge" src="Images/Andaman.avif"></div>
+        <div class="images"><img class="Imge" src="Images/Aus3.webp"></div>
+        <div class="images"><img class="Imge" src="Images/Aus2.jpg"></div>
+    </div>
+    <button onclick="Plus();">Next</button>
+    <button onclick="Minus();">Previous</button>
+    
+    <script>
+        var slideIndex=0;
+    
+        var x=document.getElementsByClassName("images");
+        ShowImage();
+
+        function Plus()
+        {
+            var i;
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.display= "none";
+            }
+            slideIndex++;
+            x[slideIndex-1].style.display = "block";
+            Timeout();
+
+        }
+      
+
+        function ShowImage()
+        {   
+            var i;
+           
+            if(slideIndex>=x.length)
+            {
+                slideIndex=0;
+            }
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.display= "none";
+            }
+            slideIndex++;
+            x[slideIndex-1].style.display = "block";
+            Timeout();
+
+        }
+        function Timeout()
+        {
+            setTimeout(ShowImage, 5000);
+        }
+    </script>
+</body>
+</html>
