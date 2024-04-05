@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Navbar/Header.css">
+    <link rel="stylesheet" href="Styles/Sidebar.css">
+    
+    <!-- fonts -->
+
+   <!-- 1)FiraSans 2)Inter 3)roboto -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .bttns{
+            width: auto;
+            color: white;
+            font-size: 1.3em;
+            font-family: fira sans;
+        }
+         body {
+      background-color: #36485c;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+    }
+    .buttons{
+
+    }
+    
+    </style>
+    <div class="Header">
+        <div class="logo">
+          <div onclick="Open_Drawer();" class="Menu-bttn" style="">
+            <div>
+              <img
+                class="Iconmen"
+                id="Menu"
+                src="Images/Icons/Header/menu_white.png"
+              />
+            </div>
+          </div>
+          <div class="Sidebar_Content">
+            <button class="close_bttn" onclick="Close_Drawer(); ">
+              Close <img class="close_img" src="Icons/close.png" />
+            </button>
+            <button style="color: white">Home</button>
+            <button style="color: white">Support</button>
+            <button onclick="Close_Drawer();show_footer();" style="color: white">
+              About Us
+            </button>
+            <button onclick="Close_Drawer();show_footer();" style="color: white">
+              Contact Us
+            </button>
+            <button style="color: white">Our Work</button>
+            <button style="color: white">Campaigns</button>
+          </div>
+          <!-- blur overlay -->
+          <div class="blur_overlay"></div>
+          <a href="MainPage.html"
+            ><img class="logo1" src="Images/Icons/logo1.png"
+          /></a>
+        </div>
+        <div class="button_section">
+          <button class="air-bttn">
+            <div class="buttons" style="height: 40px; display: flex; align-items: center; justify-content: center;"><span class="bttns">Flights</span></div>
+          </button>
+          <button class="train-bttn">
+    <span class="bttns">Trains</span>
+          </button>
+          <button class="Buss-bttn">
+          <span class="bttns">Destinations</span>
+          </button>
+          <button class="Hotel-bttn">
+           <span class="bttns">Popular</span>
+          </button>
+          
+        </div>
+
+        <div class="signin_sect" style="display: flex; align-items: center; width: auto;">
+            <button class="Holiday-bttn">
+                <span style="margin-right: 20px; padding: 1.2em; border-radius: 10px; font-size: 1.2em; color:white;background-color: #CA2F2D; width: 100px;">Contact Us</span>
+              </button>
+            <button class="Signin" style="background-color: #1A73E8; padding: 1em; font-size: 1.02em; color: white; width: auto; height: 50px; font-family: roboto; margin-right: 30px;">
+                Sign In
+            </button>
+        </div>
+      </div>  
+      <!-- Header END -->
+
+    
+</body>
+</html>

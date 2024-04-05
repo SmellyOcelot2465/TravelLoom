@@ -1,138 +1,134 @@
 .Header {
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    height: 120px;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: top 0.3s;
+  backdrop-filter: blur(6px);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  height: 110px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: top 0.3s;
 }
 
 .Header button {
-    
-    height: 100px;
-    margin-right: 2px;
-    border-radius: 10px;
-    border: none;
-    background-color: transparent;
+  height: 100px;
+  margin-right: 2px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
 }
 
 .Header button:hover {
-    cursor: pointer;
- 
+  cursor: pointer;
 }
 
 .air-bttn,
 .Buss-bttn,
 .train-bttn,
 .Hotel-bttn {
-    width: 120px;
+  width: 120px;
 }
-
 
 /* sections -------------------------------------------------------------------*/
 
 .logo {
-    display: flex;
+  display: flex;
 }
 
 .logo1 {
-    margin-top: 5px;
-    height: 100px;
-    width: 270px;
-    object-fit: fill;
+  aspect-ratio: 270/100;
+  margin-left: 50px;
+  margin-top: 5px;
+  height: 100px;
+  object-fit: fill;
 }
 
 .logo1:hover {
-    cursor: pointer;
-    opacity: 95%;
+  cursor: pointer;
+  opacity: 95%;
 }
 
 .button_section {
-    display: flex;
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 
 .right-sect {
-    padding-right: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
 
 /* Right section buttons -----------------------------------------------------*/
 
-
-.RSB {
-    box-shadow: none;
-    border-radius: 20px;
-    padding: 5px 10px 5px 10px;
-    font-family: oswald;
+.RSB1,
+.RSB2 {
+  box-shadow: none;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  font-family: oswald;
+}
+.Menu-bbtn {
+  margin-right: 30px;
 }
 
-.RSB:hover {
-    opacity: 85%;
-    cursor: pointer;
-    box-shadow: 2px 1px 5px lightslategrey;
+.RSB1:hover,
+.RSB2:hover {
+  opacity: 85%;
+  cursor: pointer;
+  box-shadow: 2px 1px 5px lightslategrey;
 }
 
 .bttn-names {
-    font-family: kanit;
-    font-weight: 400;
-    font-size: 15px;
-    color: whitesmoke;
-    padding: 10px
+  font-family: kanit;
+  font-weight: 400;
+  font-size: 15px;
+  color: whitesmoke;
+  padding: 10px;
 }
-
 
 /* Icons of button section ----------------------------------------------------*/
 
 #menu {
-     margin-left: 50%;
+  margin-left: 50%;
 }
 
 #Airplane,
 #Train,
 #Bus,
 #Hotel {
-    margin-left: 8%;
+  margin-left: 8%;
 }
 
 #Holiday {
-    margin-left: 25px;
+  margin-left: 25px;
 }
-
 
 /* Icon button -----------------------------------------------------------------*/
 
-
 .icnbox {
-    width: 100px;
-    height: 70px;
+  width: 100px;
+  height: 70px;
 }
 
 .Icon {
-    width: 80px;
-    height: 70px;
-    object-fit: fill;
-
+  width: 80px;
+  height: 70px;
+  object-fit: fill;
 }
 
 .Iconmen {
-    margin-left: 25%;
-    margin-top: 55%;
-    width: 50px;
-    height: 50px;
-    object-fit: fill;
+  margin-left: 25%;
+  margin-top: 55%;
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
 }
 
 .Menu-bttn:hover {
-    cursor: pointer;
-
+  cursor: pointer;
 }

@@ -1,0 +1,78 @@
+@media (max-width: 500px) {
+  #Menu {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-bottom: 0.3em;
+    margin-right: 0.5em;
+    margin-left: 0.3em;
+  }
+  .logo1 {
+    height: 50px;
+    margin: 0;
+    padding: none;
+  }
+  .Menu-bttn {
+    margin-right: 0px;
+  }
+  .logo {
+    align-items: center;
+    justify-items: center;
+  }
+
+  .Header {
+    padding-bottom: 2em;
+    border-bottom: white solid 1px;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+  }
+  .Header button {
+    height: 50px;
+  }
+  .bttn-names {
+    font-size: 10px;
+    padding: 0px;
+  }
+  #Airplane,
+  #Train,
+  #Hotel {
+    margin-left: 0.5rem;
+    width: auto;
+    height: 30px;
+  }
+  .air-bttn,
+  .train-bttn,
+  .Hotel-bttn {
+    margin-left: 0.2em;
+    padding: 0px;
+    width: 50px;
+    height: 30px;
+  }
+  .icnbox {
+    width: 30px;
+    height: 30px;
+  }
+  .right-sect {
+    padding: 0;
+  }
+  .RSB2 {
+    padding-top: 0.9em;
+    padding-right: 0;
+    text-align: center;
+    padding-bottom: 0;
+    padding-left: 0%;
+    height: 30px;
+    width: 50px;
+    font-size: 0.5rem;
+    border-radius: 0.4rem;
+    margin-right: 0.5rem;
+    border: white solid 0.2em;
+  }
+
+  .Buss-bttn,
+  .Holiday-bttn,
+  .RSB1 {
+    display: none;
+  }
+}

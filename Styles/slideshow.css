@@ -1,64 +1,65 @@
 .name {
-    padding-left: 20px;
-    opacity: 70%;
-    font-family: inter;
-    width: 150px;
-    font-size: 50px;
-    font-weight: 700;
-    position: absolute;
-    background-color: transparent;
-    color: white;
-    bottom: 20px;
-    left: 10px;
-    border-bottom-left-radius: 50px;
+  padding-left: 20px;
+  opacity: 70%;
+  font-family: inter;
+  width: 150px;
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  bottom: 20px;
+  left: 10px;
+  border-bottom-left-radius: 50px;
 }
 
 .slideshow {
-   
-    width: 1000px;
-    position: relative;
+  width: 1000px;
+  position: relative;
 }
 
 .mySlides {
-    height: 500px;
-    width: 1000px;
-    display: none;
+  height: 500px;
+  width: 1000px;
+  display: none;
 }
-.left_image{
-    margin-left: 20%;
+.right_image {
+  transform: scaleX(-1);
 }
-.left-bttn, .right-bttn :hover{
-    cursor: pointer;
+.left_image {
+}
 
+.left-bttn:hover,
+.right-bttn:hover {
+  opacity: 40%;
 }
 .left-bttn {
-    border-radius: 10px;
-    padding: 0;
-    position: absolute;
-    background-color: whitesmoke;
-    height: 40px;
-    width: 40px;
-    left: 20px;
-    border: none;
-    top: 50%;
-    box-shadow: 1px 2px lightslategrey;
-    
+  transition: opacity 0.25s ease-in;
+  padding: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 20%;
+  height: 100%;
+  width: 48px;
+  left: 0px;
+  border: none;
+  top: 0;
 }
 .right-bttn {
-    box-shadow: 1px 2px lightslategrey;
-    border-radius: 10px;
-    padding: 0;
-    position: absolute;
-    right: 20px;
-    border: none;
-    top: 50%;
-    height: 40px;
-    width: 40px;
-}   
-.imges{
-    z-index: 0;
-    width:100%; height:100%;  
-    object-fit: fill;  
-    box-shadow: 1px 2px 5px grey;
-
+  transition: opacity 0.25s ease-in-out;
+  padding: 0;
+  background-color: black;
+  opacity: 20%;
+  position: absolute;
+  right: 0px;
+  border: none;
+  top: 0;
+  height: 100%;
+  width: 48px;
+}
+.imges {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }

@@ -1,111 +1,148 @@
-
 .body {
-    padding-bottom: 100px;
-    padding-top: 80px;
-    margin: 0px;
-
-
+  padding-bottom: 100px;
+  padding-top: 80px;
+  margin: 0px;
 }
 
 .grid_places {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .destination-column {
-    height: 350px;
-    margin-bottom: 90px;
-    display: flex;
-
+  height: 350px;
+  margin-bottom: 90px;
+  display: flex;
 }
 
 .ptv {
-    cursor: pointer;
-    height: 550px;
-    flex: 1;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 30px;
+  cursor: pointer;
+  height: 550px;
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
 }
 
 a .dest {
-    max-width: 400px;
-    cursor: pointer;
-    flex: 1;
-    align-items: center;
-    background-color: rgb(233, 233, 233);
-    border-radius: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-    border-color: black;
-    border-width: 10px;
-    padding: 0px;
+  max-width: 400px;
+  cursor: pointer;
+  flex: 1;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+  border-width: 10px;
+  padding: 0px;
 }
 
 .nop-1 {
-
-    margin-left: 7px;
-    margin-top: 10px;
-    font-size: 35px;
-    font-family: inter;
-    font-weight: 900;
-    color: lightslategray;
+  transition-delay: 350ms;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(70px);
+  margin-left: 7px;
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: inter;
+  font-weight: 900;
+  color: #5f595c;
 }
 
 .dest:hover {
-    opacity: 75%;
-    transform: scale(1.2);
-
+  transform: scale(1.2);
+}
+.dest:hover .info-1 {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.dest:hover .nop-1 {
+  transform: translateX(0px);
 }
 
 .dest-img {
-    height: 280px;
-    width: 100%;
-    border-top-left-radius: 21px;
-    border-top-right-radius: 21px;
+  height: 280px;
+  width: 100%;
+  border-top-left-radius: 21px;
+  border-top-right-radius: 21px;
 }
 
 .info-1 {
-    margin-left: 30px;
-    color: darkslategray;
-    margin-top: 0;
-    font-size: 14px;
-    font-family:kanit ;
-    height: 150px;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
+  transform: translateX(170px);
+  opacity: 0;
+  transition: 0.5s;
+  margin-left: 30px;
+  color: #5e503f;
+  margin-top: 15px;
+  font-size: 14px;
+  font-family: kanit;
+  height: 150px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .dest {
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 1px 2px 5px grey;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 1px 2px 5px grey;
 }
 
+.text1,
+.text2 {
+  z-index: 1;
+  font-family: inter;
+  font-weight: bold;
+  color: white;
+
+  /* background-image: linear-gradient(to top, #ffffff, #ffffff);
+  background-clip: text;
+  color: transparent; */
+}
+.Slide-back {
+  border-radius: 50px;
+  height: 600px;
+  width: 1100px;
+  background-color: white;
+}
 .text1 {
-    z-index: 1;
-    font-family: inter;
-    color: white;
-  
-
-    /* background-image: linear-gradient(to top, #ffffff, #ffffff);
-    background-clip: text;
-    color: transparent; */
+  animation-name: slide-back;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
-.Slide-back{
-    border-radius: 50px;
-    height: 600px;
-    width: 1100px;
-    background-color: white;
+@keyframes slide-back {
+  from {
+    transform: translateX(-60rem);
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
+
+.text2 {
+  animation: slide linear both;
+  animation-timeline: view();
+  animation-range-start: contain;
+  animation-range-end: 600px;
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

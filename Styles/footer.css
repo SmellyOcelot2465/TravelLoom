@@ -1,134 +1,152 @@
-.footer{
-    bottom: 0;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    position: relative;
-
-    width: 100%;
-    color: gray; 
-    font-weight: 600;
+.footer {
+  box-shadow: 1px 2px 5px black;
+  bottom: 0;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  position: relative;
+  margin-top: 6em;
+  width: 100%;
+  color: white;
+  font-weight: 600;
 }
-.footer-1{
-    flex: 4;
-    display: flex;
-    flex-direction: row;
+.footer-1 {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
 }
-.f1-0{
-    flex: 1;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.f1-0 {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-.about{
-margin-top: 10px;
-margin-bottom: 5px;
+.about {
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
-.about-us{
-    cursor: pointer;
-    justify-content: space-between;
-    margin-bottom: 8px;
-}
-
-
-
-.f2-0{
-    flex: 1;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px;
-}
-.enquiry{
-flex: 2;
-padding-top: 15px;
-}
-.bars{
-flex: 4;
-color: black;
-}
-.name-bar{
-    padding: 4px;
-    border-radius: 3px ;
-height: 24px;
-width: 220px;
-margin-bottom: 5px;
-}
-.email-bar{
-    padding: 4px;
-    border-radius: 3px ;
-height: 22px;
-width: 220px;
-margin-top: 5px;
-margin-bottom: 5px;
-}
-.question-bar{
-    padding: 4px;
-    border-radius: 3px ;    
-    width: 220px;
-height: 50px;
-margin-bottom: 5px;
-}
-.contact-us{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-.submit-button{
-    border-radius: 5px;
-    width: 70px;
-    font-size: 14px;
-    margin-left: 85px;
-    background-color: gray;
-    color: white;
-    border: none;
-    font: 200px;
-    box-shadow: 1px 1px 5px;
+.about-us {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: monospace;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
-.f3-1{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    
-    margin-left: 180px;
-    margin-top: 16px;
+.f2-0 {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.enquiry {
+  font-family: oswald;
+  font-size: 25px;
+  flex: 1;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.bars {
+  flex: 4;
+  color: white;
+}
+.name-bar {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+  height: 24px;
+  width: 220px;
+  margin-bottom: 10px;
+}
+.email-bar {
+  border: none;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 3px;
+  height: 22px;
+  width: 220px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.question-bar {
+  border: none;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 3px;
+  width: 220px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.contact-us {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.submit-button {
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 65px;
+  background-color: white;
+  color: grey;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  font: 200px;
+}
 
+.f3-1 {
+  font-family: oswald;
+  font-size: 25px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  margin-left: 140px;
+  margin-top: 60px;
 }
-.f3-2{
-    flex: 3;
-    align-items: center;
-    display: flex;
-    margin-left: 0px;
-    justify-content: space-between;
-    color: black    ;
+.f3-2 {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: monospace;
+  flex: 3;
+  margin-left: 0px;
+  color: white;
 }
-.footer-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
+.footer-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
-.link-1,.link-2,.link-3{
-    cursor: pointer;
+.link-1,
+.link-2,
+.link-3 {
+  cursor: pointer;
 }
-.insta-icon,.twitter-icon,.fb-icon{
-    width: 20px;
-    height: 20px;
+.insta-icon,
+.twitter-icon,
+.fb-icon,
+.git-icon {
+  width: 40px;
+  height: 40px;
 }
-.insta{
-    flex: 1;
+.insta {
+  margin-left: 30px;
 }
-.fb{
-    flex: 1;
-    margin-left: 100px;
+.fb {
+  margin-left: 20px;
 }
 
-.twitter{
-    flex: 1;
-    margin-left: 100px;
+.twitter,
+.git {
+  margin-left: 20px;
 }
-
-
-

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking Page</title>
+    <style>
+      button {
+        cursor: pointer;
+      }
+      .booking-window {
+        border-width: 1px;
+        border-style: solid;
+        border-color: grey;
+        height: 370px;
+        width: 500px;
+        margin-left: 30%;
+        margin-top: 50px;
+      }
+
+      .heading {
+        text-align: center;
+        padding-top: 4px;
+        background-color: rgb(207, 207, 255);
+        font-family: arial;
+      }
+      .quote {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-weight: bold;
+      }
+      .provide {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: 12px;
+        color: gray;
+      }
+
+      .package-destination {
+        font-family: arial;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .title {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .name {
+        margin-left: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(178, 176, 176);
+        border-radius: 2px;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+      }
+
+      .members {
+        font-family: Arial;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .adult,
+      .child,
+      .infant {
+        font-weight: bold;
+        margin-bottom: 2px;
+      }
+      .adult-div {
+        margin-right: 20px;
+      }
+      .child-div {
+        margin-right: 20px;
+      }
+
+      .personal-details {
+        font-family: arial;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .contact-details {
+        font-weight: bold;
+      }
+
+      .your-name,
+      .email-id {
+        height: 30px;
+        padding-left: 5px;
+        border-color: rgb(178, 176, 176);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+      }
+      .mobile-number-div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+      .code {
+        width: 30px;
+        border-color: rgb(178, 176, 176);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        font-style: arial;
+        font-size: 14px;
+        height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 8px;
+        margin-right: 5px;
+      }
+      .mobile-number {
+        border-color: rgb(178, 176, 176);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        padding-left: 5px;
+      }
+
+      .book-now {
+        display: flex;
+        align-items: center;
+      }
+      .book-now-button {
+        font-style: arial;
+        font-weight: bold;
+        font-size: 14px;
+        background-color: white;
+        color: blue;
+        border-color: rgb(178, 176, 176);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 15px;
+        border-color: blue;
+        height: 30px;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 140px;
+        margin-right: 150px;
+      }
+      .book-now-button:hover {
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+      }
+      .book-now-button:active {
+        opacity: 50%;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="booking-window">
+      <div class="heading">
+        <div>
+          <p class="quote">Want to Go For a Memorable Holiday&#63;</p>
+        </div>
+
+        <div>
+          <p class="provide">
+            Provide Your Details to Know Best Holiday Details
+          </p>
+        </div>
+      </div>
+
+      <div class="package-destination">
+        <div class="title">Package Name</div>
+        <div class="name">Breathtaking Kashmir</div>
+      </div>
+
+      <div class="members">
+        <div class="adult-div">
+          <p class="adult">Adult</p>
+          <div>
+            <div>
+              <button
+                onclick="let count=Minus(adult.innerHTML); UpdateAdult(count);"
+              >
+                -
+              </button>
+              <div
+                style="
+                  display: inline-block;
+                  border-style: solid;
+                  border-color: gray;
+                  border-width: 1px;
+                  border-radius: 2px;
+                  padding-left: 6px;
+                  padding-right: 6px;
+                "
+                class="ad"
+              >
+                1
+              </div>
+              <button
+                onclick="let count1=Plus(adult.innerHTML);UpdateAdult(count1);"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="child-div">
+          <p class="child">Child</p>
+          <div>
+            <div>
+              <button
+                onclick="let ch1=Minus(child.innerHTML); UpdateChild(ch1);"
+              >
+                -
+              </button>
+              <div
+                style="
+                  display: inline-block;
+                  border-style: solid;
+                  border-color: gray;
+                  border-width: 1px;
+                  border-radius: 2px;
+                  padding-left: 6px;
+                  padding-right: 6px;
+                "
+                class="ch"
+              >
+                0
+              </div>
+              <button onclick="let ch2=Plus(child.innerHTML);UpdateChild(ch2);">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="infant-div">
+          <p class="infant">Infant</p>
+          <div>
+            <div>
+              <button
+                onclick="let if1=Minus(infant.innerHTML); UpdateInfant(if1);"
+              >
+                -
+              </button>
+              <div
+                style="
+                  display: inline-block;
+                  border-style: solid;
+                  border-color: gray;
+                  border-width: 1px;
+                  border-radius: 2px;
+                  padding-left: 6px;
+                  padding-right: 6px;
+                "
+                class="if"
+              >
+                0
+              </div>
+              <button
+                onclick="let if2=Plus(infant.innerHTML); UpdateInfant(if2);"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="personal-details">
+        <p class="contact-details">Contact Details</p>
+        <div>
+          <input class="your-name" type="text" placeholder="Your-name" />
+          <input
+            class="email-id"
+            type="text"
+            placeholder="Your E-mail Address"
+          />
+        </div>
+
+        <div class="mobile-number-div">
+          <div class="code">+91</div>
+          <input class="mobile-number" type="text" placeholder="Mobile No." />
+        </div>
+
+        <div class="book-now">
+          <button onclick="final();" class="book-now-button">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const infant = document.querySelector(".if");
+    const child = document.querySelector(".ch");
+    const adult = document.querySelector(".ad");
+
+    function final() {
+      const name = document.querySelector(".your-name").value;
+      const email = document.querySelector(".email-id").value;
+      const mobile = document.querySelector(".mobile-number").value;
+      const pkg = document.querySelector(".name").innerHTML;
+      const adultcount = adult.innerHTML;
+      const childcount = child.innerHTML;
+      const infantcount = infant.innerHTML;
+      alert(`Sucessfully Booked!!
+${pkg}
+Name:${name}
+Email:${email}
+Mobile:${mobile}
+      `);
+    }
+    function Minus(a) {
+      if (a > 0) {
+        a--;
+        return a;
+      } else {
+        a = 0;
+        return a;
+      }
+    }
+    function Plus(a) {
+      a++;
+      return a;
+    }
+    function UpdateAdult(a) {
+      adult.innerHTML = a;
+    }
+    function UpdateInfant(a) {
+      infant.innerHTML = a;
+    }
+    function UpdateChild(a) {
+      child.innerHTML = a;
+    }
+  </script>
+</html>

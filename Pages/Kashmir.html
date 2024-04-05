@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .prices {
+        color: green;
+        font-size: 35px;
+      }
+      .div {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .ptv {
+        height: 550px;
+        flex: 1;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 30px;
+      }
+      .ptv-1 {
+        position: relative;
+        width: 369px;
+        align-items: center;
+        background-color: lightseagreen;
+        border-radius: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        border-color: black;
+        border-width: 10px;
+        box-shadow: 1px 1px 5px;
+      }
+      .ptv-1-img {
+        z-index: 0;
+        height: 290px;
+        width: 370px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+      .nop-1 {
+        font-size: 30px;
+        font-family: bebas nue;
+        font-weight: 600;
+        margin-top: 10px;
+        color: black;
+      }
+      .nop-2 {
+        height: 20px;
+        align-items: center;
+      }
+      .info-1 {
+        font-size: 18px;
+        font-family: oswald;
+        color: white;
+        height: 150px;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .read-more:hover {
+        cursor: pointer;
+      }
+      .read-more {
+        background-color: transparent;
+        border-width: 0;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      .ovrlay-1,
+      .ovrlay-2,
+      .ovrlay-3 {
+        background-color: grey;
+        transition: ease-in-out;
+        display: none;
+        align-items: center;
+        color: white;
+        border-radius: 50px;
+        opacity: 100%;
+        height: 101%;
+        width: 101%;
+
+        position: absolute;
+        z-index: 100;
+      }
+
+      .booking {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+      }
+      .booking-1 {
+        height: fit-content;
+        background-color: lightgrey;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+        box-shadow: 1px 1px 5px;
+      }
+      .booking-image {
+        flex: 1;
+        height: 200px;
+      }
+      .booking-img {
+        height: 400px;
+      }
+      .booking-details {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+      }
+      .name {
+        flex: 1;
+        padding-left: 35%;
+        padding-right: 35%;
+        font-size: 25px;
+      }
+      .package {
+        flex: 3;
+        font-size: 30px;
+      }
+      .b-n-button {
+        cursor: pointer;
+        padding: 20px;
+        align-items: center;
+      }
+      .b-n {
+        cursor: pointer;
+        margin-top: 45%;
+        background-color: white;
+        color: white;
+        font-size: 25px;
+        align-items: center;
+        border-radius: 18px;
+        border-width: 0;
+        font-weight: 500;
+      }
+    </style>
+    <title>Place</title>
+    <link rel="stylesheet" href="FOOTER MAIN/main.css" />
+    <link rel="stylesheet" href="sectional1.css" />
+  </head>
+  <body>
+    <div class="div">
+      <div>
+        <h2 style="margin-left: 32%; font-size: 40px; font-family: inter">
+          Best Places to Visit in Kashmir
+        </h2>
+        <div class="ptv">
+          <div class="ptv-1">
+            <div style="">
+              <img class="ptv-1-img" src="Images/gul.avif" />
+            </div>
+            <div class="nop-1">Gulmarg</div>
+            <br />
+            <div class="info-1">
+              Experience the thrill of the Himalayas with our exclusive travel
+              package to Gulmarg. Known for its stunning landscapes and
+              adventurous activities, Gulmarg is a paradise for nature lovers
+              and thrill-seekers alike.
+            </div>
+            <div class="read-more-button">
+              <button class="read-more" onclick="opendiv(1);">
+                Read More >
+              </button>
+            </div>
+            <div class="ovrlay-1">
+              <p style="margin-left: 20px; margin-top: 30px">
+                Gondola Ride: Enjoy a breathtaking ride on the Gulmarg Gondola,
+                the highest cable car in the world. Marvel at the panoramic
+                views of the Himalayas and the lush green meadows below.
+                <br />
+                <br />
+                Skiing and Snowboarding: Indulge in thrilling skiing and
+                snowboarding adventures on the powdery slopes of Gulmarg.
+                Whether you're a beginner or an expert, Gulmarg offers something
+                for everyone.
+                <br />
+                <br />
+                Golfing: Tee off at the highest golf course in the world,
+                surrounded by the stunning Himalayan peaks. The Gulmarg Golf
+                Course is a must-visit for golf enthusiasts.
+                <br />
+                <br />
+                Alpine Treks: Explore the picturesque alpine meadows of Gulmarg
+                on a trekking adventure. Witness the beauty of colorful flowers,
+                gurgling streams, and snow-capped peaks.
+                <br />
+                <br />
+                Local Culture: Immerse yourself in the rich culture and heritage
+                of Gulmarg. Interact with the friendly locals, taste delicious
+                Kashmiri cuisine, and shop for traditional handicrafts.
+              </p>
+              <button
+                style="
+                  cursor: pointer;
+                  border: none;
+                  width: 100px;
+                  margin-left: 35%;
+                  margin-top: -51px;
+                  border-radius: 10px;
+                  padding: 10px;
+                "
+                onclick="closediv(1);"
+              >
+                Close &#x2715;
+              </button>
+            </div>
+          </div>
+
+          <div class="ptv-1">
+            <div><img class="ptv-1-img" src="Images/pahal.webp" /></div>
+            <div class="nop-1" style="">Pahalgam</div>
+            <br />
+            <div class="info-1" style="">
+              Immerse yourself in the natural beauty of Pahalgam. Marvel at the
+              stunning vistas of snow-capped mountains, dense pine forests, and
+              meandering rivers.
+            </div>
+            <div class="read-more-button">
+              <button class="read-more" onclick="opendiv(2);">
+                Read More >
+              </button>
+            </div>
+            <div class="ovrlay-2">
+              <p style="margin-left: 20px; margin-top: 30px">
+                Gondola Ride: Enjoy a breathtaking ride on the Gulmarg Gondola,
+                the highest cable car in the world. Marvel at the panoramic
+                views of the Himalayas and the lush green meadows below.
+                <br />
+                <br />
+                Skiing and Snowboarding: Indulge in thrilling skiing and
+                snowboarding adventures on the powdery slopes of Gulmarg.
+                Whether you're a beginner or an expert, Gulmarg offers something
+                for everyone.
+                <br />
+                <br />
+                Golfing: Tee off at the highest golf course in the world,
+                surrounded by the stunning Himalayan peaks. The Gulmarg Golf
+                Course is a must-visit for golf enthusiasts.
+                <br />
+                <br />
+                Alpine Treks: Explore the picturesque alpine meadows of Gulmarg
+                on a trekking adventure. Witness the beauty of colorful flowers,
+                gurgling streams, and snow-capped peaks.
+                <br />
+                <br />
+                Local Culture: Immerse yourself in the rich culture and heritage
+                of Gulmarg. Interact with the friendly locals, taste delicious
+                Kashmiri cuisine, and shop for traditional handicrafts.
+              </p>
+              <button
+                style="
+                  cursor: pointer;
+                  border: none;
+                  width: 100px;
+                  margin-left: 35%;
+                  margin-top: -51px;
+                  border-radius: 10px;
+                  padding: 10px;
+                "
+                onclick="closediv(2);"
+              >
+                Close &#x2715;
+              </button>
+            </div>
+          </div>
+          <div class="ptv-1">
+            <div><img class="ptv-1-img" src="Images/sonmarg.webp" /></div>
+            <div class="nop-1">Sonmarg</div>
+            <br />
+            <div class="info-1">
+              Embark on an unforgettable journey to Sonmarg, a gem nestled in
+              the heart of the Kashmir Valley. Known for its pristine beauty and
+              breathtaking landscapes, Sonmarg is a paradise for nature lovers
+              and adventure enthusiasts alike.
+            </div>
+            <div class="read-more-button">
+              <button class="read-more" onclick="opendiv(3);">
+                Read More >
+              </button>
+            </div>
+            <div class="ovrlay-3">
+              <p style="margin-left: 20px; margin-top: 30px">
+                Gondola Ride: Enjoy a breathtaking ride on the Gulmarg Gondola,
+                the highest cable car in the world. Marvel at the panoramic
+                views of the Himalayas and the lush green meadows below.
+                <br />
+                <br />
+                Skiing and Snowboarding: Indulge in thrilling skiing and
+                snowboarding adventures on the powdery slopes of Gulmarg.
+                Whether you're a beginner or an expert, Gulmarg offers something
+                for everyone.
+                <br />
+                <br />
+                Golfing: Tee off at the highest golf course in the world,
+                surrounded by the stunning Himalayan peaks. The Gulmarg Golf
+                Course is a must-visit for golf enthusiasts.
+                <br />
+                <br />
+                Alpine Treks: Explore the picturesque alpine meadows of Gulmarg
+                on a trekking adventure. Witness the beauty of colorful flowers,
+                gurgling streams, and snow-capped peaks.
+                <br />
+                <br />
+                Local Culture: Immerse yourself in the rich culture and heritage
+                of Gulmarg. Interact with the friendly locals, taste delicious
+                Kashmiri cuisine, and shop for traditional handicrafts.
+              </p>
+              <button
+                style="
+                  cursor: pointer;
+                  border: none;
+                  width: 100px;
+                  margin-left: 35%;
+                  margin-top: -51px;
+                  border-radius: 10px;
+                  padding: 10px;
+                "
+                onclick="closediv(3);"
+              >
+                Close &#x2715;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking">
+          <div class="booking-1">
+            <div class="booking-image"><img class="booking-img" src="" /></div>
+            <div class="booking-details">
+              <div class="name">Kashmir</div>
+              <br />
+              <br />
+              <div class="package">
+                5N/6D (1N Srinagar Houseboat1N Gulmarg2N Pahalgam1N Srinagar)
+              </div>
+            </div>
+            <div class="prices">59999/-Only</div>
+            <div class="b-n-button">
+              <button class="b-n">
+                <a style="text-decoration: none" href="Booking.html"
+                  >BOOK NOW</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="booking-1">
+            <div class="booking-image"><img class="booking-img" src="" /></div>
+            <div class="booking-details">
+              <div class="name">Kashmir</div>
+              <br />
+              <br />
+              <div class="package">
+                6N/7D (1N Srinagar Houseboat1N Gulmarg2N Pahalgam2N Srinagar)
+              </div>
+            </div>
+            <div class="prices">69999/-Only</div>
+            <div class="b-n-button">
+              <button class="b-n">
+                <a style="text-decoration: none" href="Booking.html"
+                  >BOOK NOW</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="booking-1">
+            <div class="booking-image"><img class="booking-img" src="" /></div>
+            <div class="booking-details">
+              <div class="name">Kashmir</div>
+              <br />
+              <br />
+              <div class="package">
+                6N/7D (1N Srinagar Houseboat1N Gulmarg2N Pahalgam2N Srinagar)
+              </div>
+            </div>
+            <div class="prices">79999/-Only</div>
+            <div class="b-n-button">
+              <button class="b-n">
+                <a style="text-decoration: none" href="Booking.html"
+                  >BOOK NOW</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function closediv(i) {
+      document.querySelector(`.ovrlay-${i}`).style.display = "none";
+    }
+    function opendiv(i) {
+      document.querySelector(`.ovrlay-${i}`).style.display = "block";
+    }
+  </script>
+</html>
